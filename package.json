@@ -1,0 +1,8 @@
+{
+  "name": "ftk-sut",
+  "version": "1.0.0",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
