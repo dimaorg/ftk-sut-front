@@ -9,7 +9,35 @@
 </head>
 <body>
   <header class="page-header">
-
+    <nav class="main-navigation">
+      <ul class="page-navigation main-navigation__list">
+        <li class="page-navigation__item main-navigation__item"><a class="page-navigation__link main-navigation__link main-navigation__link--home" title="Перейти на главную">На главную</a></li>
+        <li class="page-navigation__item main-navigation__item"><a href="rating.html" class="page-navigation__link main-navigation__link main-navigation__link--rating" title="Посмотреть рейтинг">Рейтинг</a></li>
+        <li class="page-navigation__item main-navigation__item"><a href="achievements.html" class="page-navigation__link main-navigation__link main-navigation__link--achievements" title="Посмотреть достижения">Достижения</a></li>
+        <li class="page-navigation__item main-navigation__item articles articles" tabindex="0">
+          Статьи
+          <ul class="articles-list">
+            <li class="articles__item"><a href="articles.html#best" class="articles__link main-navigation__link main-navigation__link--best" title="Посмотреть лучшие статьи">Лучшие</a></li>
+            <li class="articles__item"><a href="articles.html#new" class="articles__link main-navigation__link main-navigation__link--new" title="Посмотреть новые статьи">Новые</a></li>
+            <li class="articles__item"><a href="articles.html#for-edit" class="articles__link main-navigation__link main-navigation__link--for-edit" title="Статьи, требующие проверки">Требуют проверки</a></li>
+          </ul>
+        </li>
+        <li class="page-navigation__item main-navigation__item"><a href="timetable.html" class="page-navigation__link main-navigation__link main-navigation__link--timetable" title="Посмотреть раписание">Расписание</a></li>
+        <li class="page-navigation__item main-navigation__item"><a href="admin.html" class="page-navigation__link main-navigation__link main-navigation__link--admin" title="Зайти в панель администратора">Панель администратора</a></li>
+      </ul>
+      <ul class="user-navigation main-navigation__list none-registered">
+        <li class="user-navigation__item main-navigation__item"><a href="login.html" class="user-navigation__link main-navigation__link main-navigation__link--login" title="Войти в свой аккаунт">Вход</a></li>
+        <li class="user-navigation__item main-navigation__item"><a href="registration.html" class="user-navigation__link main-navigation__link main-navigation__link--registration" title="Регистрация на сайте">Регистрация</a></li>
+      </ul>
+      <ul class="user-navigation main-navigation__list registered">
+        <li class="user-navigation__item main-navigation__item" tabindex="0">
+          <a href="login.html" class="user-navigation__link main-navigation__link main-navigation__link--profile" title="Посмотреть информацию о пользователе">Дмитрий Буглак</a>
+          <ul class="logout">
+            <li class="user navigation__item main-navigation__item"><a href="#" class="user-navigation__link main-navigation__link main-navigation__link--logout" title="Выйти из своего аккаунта">Выйти</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="container">
 
