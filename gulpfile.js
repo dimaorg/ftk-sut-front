@@ -28,7 +28,7 @@ task('html', function () {
 });
 
 task('css', function () {
-  return src('src/sass/**/*.scss')
+  return src('src/sass/app.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -36,7 +36,7 @@ task('css', function () {
       autoprefixer()
     ]))
     .pipe(minify())
-    .pipe(rename('style.min.css'))
+    .pipe(rename('app.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(dest('public/css'));
 });
@@ -87,7 +87,7 @@ task('server', function () {
     server: 'public/'
   });
   watch('src/*.html', series('html', 'refresh'));
-  watch('src/sass/**/*.sass', series('css', 'refresh'));
+  watch('src/sass/**/*.scss', series('css', 'refresh'));
   watch('src/js/app.js', series('js', 'refresh'))
 });
 
