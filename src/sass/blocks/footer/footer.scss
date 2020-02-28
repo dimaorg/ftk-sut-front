@@ -1,0 +1,77 @@
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 150px;
+  padding: 55px 10vw 55px 10vw;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    text-decoration: none;
+    color: $link-color;
+    &:hover, &:focus {
+      color: darken($link-color, 10%);
+    }
+  }
+  &__wrapper {
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  &__background {
+    position: absolute;
+    left: 15vw;
+    bottom: 0;
+    z-index: 0;
+    width: 70vw;
+    height: 115px;
+    background-color: #eee;
+  }
+}
+
+.logo--footer {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  z-index: 1;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: bold;
+  color: $logo--footer-color;
+}
+
+.contacts::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 19px;
+  margin-right: 10px;
+  color: $link-color;
+  background: url("../img/icon-phone.svg") no-repeat center center;
+}
+
+.address::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  background: url("../img/map-point.svg") no-repeat center center;
+}
+
+.social--vk::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background: url("../img/vk.svg") no-repeat center center;
+}
