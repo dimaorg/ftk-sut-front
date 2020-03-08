@@ -1,0 +1,40 @@
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation__link--home:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  cursor: default;
+}
+
+.main-navigation__link--home__text,
+.main-navigation__link--home__icon {
+  font-weight: 700;
+}
+
+.main-navigation__link--home__icon {
+  font-size: 1.5rem;
+}
+
+.main-navigation__item--articles {
+  cursor: pointer;
+}
+
+.main-navigation__toggle--desktop {
+  display: none;
+  margin: 0 auto;
+}
+
+.articles-list {
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-navigation__toggle--desktop {
+    display: block;
+  }
+}

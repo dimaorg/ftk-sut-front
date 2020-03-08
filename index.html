@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ФТК СЮТ</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body id="page-top" class="sidebar-toggled">
+  <div id="wrapper">
+    <header class="page-header navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li>
+            <a class="main-navigation__link--home sidebar-brand d-flex align-items-center justify-content-center" aria-label="Перейти на главную">
+              <i class="main-navigation__link--home__icon icon-home sidebar-brand-icon fa fa-home"></i>
+              <span class="main-navigation__link--home__text sidebar-brand-text mx-3">фтк сют</span>
+            </a>
+          </li>
+          <li class="separating-line">
+            <hr class="sidebar-divider my-0">
+          </li>
+          <li class="nav-item">
+            <a href="rating.html" class="main-navigation__link--rating nav-link" aria-label="Посмотреть рейтинг"><i class="far fa-star"></i><span>Рейтинг</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="achievements.html" class="main-navigation__link--achievements nav-link" aria-label="Посмотреть достижения"><i class="fa fa-trophy"></i><span>Достижения</span></a>
+          </li>
+          <li class="main-navigation__item--articles nav-item">
+            <a class="main-navigation__link--articles nav-link collapsed" data-toggle="collapse" data-target="#articles-list" aria-expanded="false" aria-controls="articles-list"><i class="far fa-newspaper"></i><span>Статьи</span></a>
+            <ul class="main-navigation__list collapse" id="articles-list" data-parent="#accordionSidebar">
+              <li class="wrapper">
+                <ul class="main-navigation__list articles-list bg-white py-2 collapse-inner rounded">
+                  <li>
+                    <a href="articles.html#best" class="main-navigation__link--best collapse-item" aria-label="Посмотреть лучшие статьи"><i class="far fa-grin-stars"></i><span>Лучшие</span></a>
+                  </li>
+                  <li>
+                    <a href="articles.html#new" class="main-navigation__link--new collapse-item" aria-label="Посмотреть новые статьи"><i class="fas fa-plus"></i><span>Новые</span></a>
+                  </li>
+                  <li>
+                    <a href="articles.html#for-edit" class="main-navigation__link--for-edit collapse-item" aria-label="Статьи, требующие проверки"><i class="far fa-edit"></i><span>Требуют проверки</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="timetable.html" class="main-navigation__link--timetable nav-link" aria-label="Посмотреть раписание"><i class="far fa-clock"></i><span>Расписание</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="admin.html" class="main-navigation__link--admin nav-link" aria-label="Зайти в панель администратора"><i class="fas fa-users-cog"></i><span>Панель администратора</span></a>
+          </li>
+          <li class="separating-line">
+            <hr class="sidebar-divider my-0">
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-navigation--none-registered">
+          <li class="nav-item">
+            <a href="login.html" class="main-navigation__link--login nav-link" aria-label="Войти в свой аккаунт"><i class="fas fa-sign-in-alt"></i><span>Вход</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="registration.html" class="main-navigation__link--registration nav-link" aria-label="Регистрация на сайте"><i class="fas fa-address-card"></i><span>Регистрация</span></a>
+          </li>
+          <li class="separating-line">
+            <hr class="sidebar-divider my-0">
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-navigation--registered">
+          <li class="nav-item" tabindex="0">
+            <a href="login.html" class="nav-link main-navigation__link--profile" aria-label="Посмотреть информацию о пользователе"><i class="far fa-user-circle"></i><span>Дмитрий Буглак</span></a>
+          </li>
+          <li class="nav-item logout">
+            <a href="#" class="nav-link main-navigation__link--logout" aria-label="Выйти из своего аккаунта"><i class="fas fa-sign-out-alt"></i><span>Выйти</span></a>
+          </li>
+          <li class="separating-line">
+            <hr class="sidebar-divider d-none d-md-block">
+          </li>
+        </ul>
+        <button class="main-navigation__toggle--desktop rounded-circle border-0" id="sidebarToggle"></button>
+      </nav>
+    </header>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <main id="content">
+        <section class="feedback bg-white topbar mb-4 static-top shadow">
+          <h2 class="visually-hidden">Обратная связь</h2>
+          <button id="sidebarToggleTop" class="sidebar-toggle btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i></button>
+        </section>
+        <h1 class="page-title">Фототехнический клуб станции юных техников</h1>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+      </main>
+      <footer class="page-footer">
+        <span class="logo--footer">ФТК СЮТ</span>
+        <div class="page-footer__wrapper">
+          <a href="tel:+78639242821" class="contacts page-footer__link" target="_blank"><i class="icon-icon-phone" aria-hidden="true"></i>+7 (8639) 24-28-21</a>
+          <a href="https://yandex.ru/maps/-/CGd~eEpW" class="address page-footer__link" target="_blank"><i class="icon-map-point" aria-hidden="true"></i>пр. Курчатова, 47, подъезд 1, этаж 1</a>
+          <a href="https://vk.com/ftksut" class="social social--vk page-footer__link" target="_blank"><i class="icon-vk" aria-hidden="true"></i>ФТК СЮТ во ВКонтакте</a>
+        </div>
+        <div class="copyright">
+
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+</body>
+</html>
