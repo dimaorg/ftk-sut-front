@@ -1,0 +1,30 @@
+.feedback__list.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 4.5rem;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback__wrapper {
+    width: 100%;
+  }
+
+  .feedback__list {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    border: 0;
+  }
+
+  .feedback__item {
+    font-size: 1rem;
+  }
+}

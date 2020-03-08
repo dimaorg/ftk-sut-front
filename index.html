@@ -12,7 +12,7 @@
 </head>
 <body id="page-top" class="sidebar-toggled">
   <div id="wrapper">
-    <header class="page-header navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <header class="page-header navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li>
@@ -31,7 +31,7 @@
             <a href="achievements.html" class="main-navigation__link--achievements nav-link" aria-label="Посмотреть достижения"><i class="fa fa-trophy"></i><span>Достижения</span></a>
           </li>
           <li class="main-navigation__item--articles nav-item">
-            <a class="main-navigation__link--articles nav-link collapsed" data-toggle="collapse" data-target="#articles-list" aria-expanded="false" aria-controls="articles-list"><i class="far fa-newspaper"></i><span>Статьи</span></a>
+            <a class="main-navigation__link--articles nav-link collapsed" data-toggle="collapse" data-target="#articles-list" aria-expanded="false" aria-controls="articles-list" tabindex="0"><i class="far fa-newspaper"></i><span>Статьи</span></a>
             <ul class="main-navigation__list collapse" id="articles-list" data-parent="#accordionSidebar">
               <li class="wrapper">
                 <ul class="main-navigation__list articles-list bg-white py-2 collapse-inner rounded">
@@ -70,7 +70,7 @@
           </li>
         </ul>
         <ul class="main-navigation__list user-navigation--registered">
-          <li class="nav-item" tabindex="0">
+          <li class="nav-item">
             <a href="login.html" class="nav-link main-navigation__link--profile" aria-label="Посмотреть информацию о пользователе"><i class="far fa-user-circle"></i><span>Дмитрий Буглак</span></a>
           </li>
           <li class="nav-item logout">
@@ -88,6 +88,13 @@
         <section class="feedback bg-white topbar mb-4 static-top shadow">
           <h2 class="visually-hidden">Обратная связь</h2>
           <button id="sidebarToggleTop" class="sidebar-toggle btn btn-link d-md-none rounded-circle mr-3"><i class="fa fa-bars"></i></button>
+          <div class="feedback__wrapper">
+            <a class="feedback__toggle dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Обратная связь</a>
+            <ul class="dropdown-menu feedback__list">
+              <li class="feedback__item"><a href="feedback-opinion.html" class="feedback__link">Поделитесь своим мнением</a></li>
+              <li class="feedback__item"><a href="feedback.html" class="feedback__link">Сообщить об ошибке</a></li>
+            </ul>
+          </div>
         </section>
         <h1 class="page-title">Фототехнический клуб станции юных техников</h1>
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>

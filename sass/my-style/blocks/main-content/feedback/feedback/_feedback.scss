@@ -1,0 +1,28 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  &__list {
+    list-style: none;
+  }
+  &__toggle {
+    cursor: default;
+    &::after, &::before {
+      content: "";
+      display: none !important;
+    }
+  }
+  &__link {
+    text-decoration: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback {
+    justify-content: center;
+    &__toggle {
+      display: none;
+    }
+  }
+}
