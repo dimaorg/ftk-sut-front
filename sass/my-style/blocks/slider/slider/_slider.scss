@@ -1,0 +1,25 @@
+.slider {
+  padding: 0 2rem 3rem 2rem;
+  & p {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  & img {
+    width: auto !important;
+    height: 500px;
+    margin: 0 auto;
+  }
+  & li[data-slide-to],
+  & span {
+    color: lighten(#000, 20%);
+    background-image: none;
+    cursor: pointer;
+  }
+  & li[data-slide-to] {
+    background-color: lighten(#000, 20%);
+    opacity: 0.4;
+  }
+  & li[data-slide-to].active {
+    background-color: lighten(#000, 10%);
+    opacity: 1;
+  }
+}
