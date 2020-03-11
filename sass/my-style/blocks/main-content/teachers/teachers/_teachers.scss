@@ -1,0 +1,32 @@
+.teacher {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 2.25rem;
+  &__photo {
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+    text-indent: -200vw;
+    border-radius: 50%;
+    background-color: lighten(#000, 50%);
+    overflow: hidden;
+  }
+  &__name {
+    max-width: 350px;
+    margin-bottom: 1rem !important;
+    color: lighten(#000, 10%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__employment {
+    font-size: 1rem;
+    color: lighten(#000, 50%);
+    text-align: center;
+  }
+}
