@@ -1,15 +1,103 @@
+.teachers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 900px;
+  overflow: hidden;
+}
+
 .teacher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
   &__photo {
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
     background-color: lighten(#000, 50%);
+    overflow: hidden;
   }
   &__name {
-    margin-bottom: 1rem !important;
+    display: inline-block;
+    margin-bottom: 20px !important;
+    color: #000;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
+    line-height: 30px;
   }
   &__employment {
+    display: inline-block;
     font-size: 1rem;
-    text-align: center;
+    color: lighten(#000, 50%);
+  }
+}
+
+#teachersToggle {
+  display: block;
+  margin: 1rem auto;
+  background: none;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.toggled--teachers {
+  display: none;
+  font-weight: 600;
+  color: #4e73df;
+  &:hover {
+    color: #224abe;
+  }
+}
+
+.none-toggled--teachers {
+  display: inline-block;
+  color: #4e73df;
+  font-weight: 600;
+  &:hover {
+    color: #224abe;
+  }
+}
+
+.teachers.full-size {
+  height: auto;
+}
+
+.toggled--teachers.full-size {
+  display: inline-block;
+}
+
+.none-toggled--teachers.full-size {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .teachers {
+    height: 810px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teachers {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1105px) {
+  .teachers {
+    height: 540px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teachers {
+    height: 270px;
   }
 }
