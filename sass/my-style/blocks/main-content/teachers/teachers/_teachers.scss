@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 900px;
+  height: 708px;
   overflow: hidden;
 }
 
@@ -35,6 +35,7 @@
     display: inline-block;
     font-size: 1rem;
     color: lighten(#000, 50%);
+    text-align: center;
   }
 }
 
@@ -76,6 +77,18 @@
 
 .none-toggled--teachers.full-size {
   display: none;
+}
+
+@media screen and (min-width: 358px) {
+  .teachers {
+    height: 648px;
+  }
+}
+
+@media screen and (min-width: 364px) {
+  .teachers {
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 545px) {
